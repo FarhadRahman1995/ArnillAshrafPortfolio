@@ -296,7 +296,7 @@
 				<!--Scroll to top-->
 				<div class="clearfix offset-5">
                 	<div class="copyright">Arnill Ashraf  &copy;  2020 All Right Reserved</div>
-                    //Developed by Farhad Rahman
+                    {{--Developed by Farhad Rahman--}}
 				</div>
 			</div>
 		</div>
@@ -321,11 +321,5 @@
 <script src="{{asset('js/script.js')}}"></script>
 
 <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"></script>
-
-<!--Google Map APi Key-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcaOOcFcQ0hoTqANKZYz-0ii-J0aUoHjk"></script>
-<script src="{{asset('js/map-script.js')}}"></script>
-<!--End Google Map APi-->
-
 </body>
 </html>

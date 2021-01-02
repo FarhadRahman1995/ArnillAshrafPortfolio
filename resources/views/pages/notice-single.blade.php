@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <title>Arnill Ashraf | Personal Website</title>
     <!-- Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,13 +14,19 @@
     <!-- Color File -->
     <link href="{{asset('css/color.css')}}" rel="stylesheet">
 
+{{--<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">--}}
+
 <!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 </head>
 
 <body>
+
 <div class="page-wrapper">
+
     <!-- Main Header -->
     <header class="main-header">
         <!-- Header Top -->
@@ -30,25 +36,28 @@
                     <div class="top-left">
                         <ul class="social-links clearfix">
                             <li class="social-title">Follow Me:</li>
-                            <li><a href="https://www.facebook.com/ArnillAshraf/"><span class="fab fa-facebook-f"></span></a></li>
-                            <li><a href="https://twitter.com/arnillashraf?lang=en"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="https://www.linkedin.com/in/arnillashraf"><span class="fab fa-linkedin-in"></span></a></li>
-                            <li><a href="https://www.instagram.com/arnill_ashraf"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="https://www.facebook.com/ArnillAshraf/" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+                            <li><a href="https://twitter.com/arnillashraf?lang=en" target="_blank"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="https://www.linkedin.com/in/arnillashraf" target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
+                            <li><a href="https://www.instagram.com/arnill_ashraf" target="_blank"><span class="fab fa-instagram"></span></a></li>
                         </ul>
                     </div>
                     <div class="top-right">
-                        {{-- --}}
+                        <ul class="info clearfix">
+                            {{-- --}}
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                <!-- Header Upper -->
+
+        <!-- Header Upper -->
         <div class="header-upper">
             <div class="auto-container">
                 <div class="inner-container clearfix">
                     <!--Logo-->
                     <div class="logo-box">
-                        <div class="logo"><a href="{{route('home')}}" title="Arnill Ashraf"><img src="{{url($main->logo_img)}}" alt="Arnill Ashraf" style="height: 150px; width: 150px; border-radius:25%;" title="Arnill Ashraf"></a></div>
+                        <div class="logo"><a href="{{route('home')}}" title="Arnill Ashraf"><img src="{{url($main->logo_img)}}" alt="Arnill Ashraf" style="height: 150px; width: 150px; border-radius: 25%;" title="Arnill Ashraf"></a></div>
                     </div>
 
                     <!--Nav Box-->
@@ -115,6 +124,7 @@
     </header>
     <!-- End Main Header -->
 
+
     <!-- Page Banner Section -->
     <section class="page-banner">
         <div class="image-layer lazy-image"><img src="{{asset('assets/images/big_image.jpg')}}" alt="" style="height: 100%; width: 100%;"></div>
@@ -155,9 +165,7 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
 
     <!-- Main Footer -->
     <footer class="main-footer mt-4">
@@ -165,27 +173,26 @@
             <!--Widgets Section-->
             <div class="widgets-section">
                 <div class="row clearfix">
-
                     <!--Column-->
-                    <div class="column col-lg-4 col-md-8 col-sm-12">
+                    <div class="column col-lg-4 col-md-6 col-sm-12">
                         <div class="footer-widget logo-widget">
                             <div class="widget-content">
                                 <div class="footer-logo">
                                     <a href="{{route('home')}}" title=""><img src="{{url($main->logo_img)}}" alt="" title="" style="max-height: 70px; max-width: 70px; border-radius: 20%"></a>
                                 </div>
-                                <div class="text"><h3>{{$about->description}}</h3></div>
+                                <div class="text">{{$about->description}}</div>
                                 <ul class="social-links clearfix">
-                                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-vimeo-v"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                    <li><a href="https://twitter.com/arnillashraf?lang=en" target="_blank"><span class="fab fa-twitter"></span></a></li>
+                                    <li><a href="https://www.facebook.com/ArnillAshraf/" target="_blank"><span class="fab fa-facebook-square"></span></a></li>
+                                    <li><a href="https://www.instagram.com/arnill_ashraf" target="_blank"><span class="fab fa-instagram"></span></a></li>
+                                    <li><a href="https://www.linkedin.com/in/arnillashraf" target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
                     <!--Column-->
-                    <div class="column col-lg-4 col-md-8 col-sm-12">
+                    <div class="column col-lg-4 col-md-6 col-sm-12">
                         <div class="footer-widget links-widget">
                             <div class="widget-content">
                                 <h3>Services</h3>
@@ -202,7 +209,7 @@
                     </div>
 
                     <!--Column-->
-                    <div class="column col-lg-4 col-md-8 col-sm-12">
+                    <div class="column col-lg-4 col-md-6 col-sm-12">
                         <div class="footer-widget info-widget">
                             <div class="widget-content">
                                 <h3>Contacts</h3>
@@ -219,19 +226,15 @@
         <!-- Footer Bottom -->
         <div class="footer-bottom">
             <div class="auto-container">
-
                 <!--Scroll to top-->
                 <div class="clearfix offset-5">
                     <div class="copyright">Arnill Ashraf  &copy;  2020 All Right Reserved</div>
-                    //Developed by Farhad Rahman
+                    {{--Developed by Farhad Rahman--}}
                 </div>
             </div>
         </div>
-
     </footer>
-
 </div>
-
 
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="flaticon-up-arrow"></span></div>
@@ -251,11 +254,6 @@
 <script src="{{asset('js/script.js')}}"></script>
 
 <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"></script>
-
-<!--Google Map APi Key-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcaOOcFcQ0hoTqANKZYz-0ii-J0aUoHjk"></script>
-<script src="{{asset('js/map-script.js')}}"></script>
-<!--End Google Map APi-->
-<script id="dsq-count-scr" src="//arnill-ashraf.disqus.com/count.js" async></script>
+<script id="dsq-count-scr" src="//arnillashraf.disqus.com/count.js" async></script>
 </body>
 </html>

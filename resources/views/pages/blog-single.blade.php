@@ -1,9 +1,6 @@
 @extends('layouts.without_index_layout')
 @section('content')
 
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="MkDCrIXn"></script>
-
     <!-- Page Banner Section -->
     <section class="page-banner">
         <div class="image-layer lazy-image"><img src="{{asset('assets/images/big_image.jpg')}}" alt="" style="height: 100%; width: 100%;"></div>
@@ -15,10 +12,8 @@
                 <li class="active">Blog Details</li>
             </ul>
         </div>
-
     </section>
     <!--End Banner Section -->
-
 
     <!--Sidebar Page Container-->
     <div class="sidebar-page-container">
@@ -29,13 +24,6 @@
                     <!--Blog Posts-->
                     <div class="blog-post-detail">
                         <div class="inner">
-{{--                        	<div class="post-meta">
-                                <ul class="clearfix">
-                                    <li><a href="#"><span class="icon fa fa-user"></span> Admin</a></li>
-                                    <li><a href="#"><span class="icon fa fa-comments"></span> 29 Comments</a></li>
-                                    <li><a href="#"><span class="icon fa fa-share-alt"></span></a></li>
-                                </ul>
-                            </div>--}}
                             <h2>{{$blog->title}}</h2>
                             <div class="content">
                                 <p class="big-text">{{$blog->description}}</p>
@@ -43,28 +31,6 @@
                                 <figure class="image"><img class="lazy-image" src="{{url($blog->big_image)}}" alt=""></figure>
                             </div>
                         </div>
-
-{{--                        <div class="post-share-options clearfix">
-                            <div class="social-links pull-left">
-                                <p>Share:</p>
-                                <ul class="social-icons">
-                                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                                    <div class="addthis_inline_share_toolbox" id="social-icons" style="padding-top: 100px;"></div>
-                                --}}{{--    <li><a href="https://www.facebook.com/ArnillAshraf/" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
-                                    <li><a href="https://twitter.com/share?url=<?php echo url()->full(); ?>&text={{ $blog->title }}" rel="me" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
-
-                                    <li><a href="https://twitter.com/arnillashraf?lang=en" target="_blank"><span class="fab fa-twitter"></span></a></li>
-                                    <li><a href="https://www.linkedin.com/in/arnillashraf" target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
-                                    <li><a href="https://www.instagram.com/arnill_ashraf" target="_blank"><span class="fab fa-instagram"></span></a></li>
-
-                                    <li><a href="https://www.facebook.com/sharer?u=<?php echo url()->current();?>&text={{ $blog->title }}" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://twitter.com/share?url=<?php echo url()->current();?>&text={{ $blog->title }}" rel="me" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="http://www.linkedin.com/shareArticle?&url=<?php echo url()->current();?>" rel="me" title="Google Plus" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
-                                --}}{{--
-                                </ul>
-                            </div>
-                        </div>--}}
-
                     </div>
                 </div>
 
@@ -84,16 +50,6 @@
                         </div>
                     </aside>
                 </div>
-
-                    <!-- Comments Area -->
-                    <div class="comments-area">
-                        <div class="group-title"><h3>Comments</h3></div>
-                        <div class="comment-box">
-                            <div class="fb-comments" data-href="{{ Request::url() }}" data-width="" data-numposts="5"></div>
-                        </div>
-
-                    </div>
-
                 <!-- Comments Area -->
                 <div class="comments-area">
                     <div class="group-title"><h3>Comments</h3></div>
@@ -111,7 +67,6 @@
                             })();
                         </script>
                     </div>
-
                 </div>
                 <div class="background">
                     <div style="text-align: center;">
@@ -123,7 +78,6 @@
     </div>
     </div>
     <!-- End Sidebar Page Container -->
-
 
         <!--Comment Form-->
         <div class="comment-form default-form col-lg-6 col-md-12 col-sm-12 offset-3">
@@ -170,5 +124,4 @@
     </script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fec347a45d609ed"></script>
-
 @endsection

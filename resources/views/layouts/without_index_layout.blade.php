@@ -174,8 +174,6 @@
                                 <h3>Contacts</h3>
                                 <ul class="contact-info">
                                     <li>Mirpur DOHS, Dhaka,Bangladesh</li>
-                                    {{--<li><a href="tel:(+880)  152 - 148 - 6072">(+880)  152 - 148 - 6072</a></li>
-                                    <li><a href="mailto:arnillashraf@gmail.com">arnillashraf@gmail.com</a></li>--}}
                                 </ul>
                             </div>
                         </div>
@@ -207,13 +205,12 @@
                 <!--Scroll to top-->
                 <div class="clearfix offset-5">
                     <div class="copyright">Arnill Ashraf  &copy;  2020 All Right Reserved</div>
-                    //Developed by Farhad Rahman
+                    {{--Developed by Farhad Rahman--}}
                 </div>
             </div>
         </div>
     </footer>
 </div>
-
 
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="flaticon-up-arrow"></span></div>
@@ -233,11 +230,6 @@
 <script src="{{asset('js/script.js')}}"></script>
 
 <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"></script>
-
-<!--Google Map APi Key-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcaOOcFcQ0hoTqANKZYz-0ii-J0aUoHjk"></script>
-<script src="{{asset('js/map-script.js')}}"></script>
-<!--End Google Map APi-->
 <script id="dsq-count-scr" src="//arnillashraf.disqus.com/count.js" async></script>
 </body>
 </html>

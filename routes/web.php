@@ -65,7 +65,7 @@ Route::delete('/blogs/destroy/{id}', 'BlogPagesController@destroy')->name('admin
 Route::post('/contacts', 'ContactFormController@createForm')/*->name('contact.store')*/;
 Route::post('/contact', 'ContactFormController@ContactUsForm')->name('contact.store');
 
-// Export Import Controller
+// Export Controller
 Route::get('exports', [ MyExportImportController::class, 'importExportView' ]);
 Route::get('export', [ MyExportImportController::class, 'export' ])->name('export');
 
