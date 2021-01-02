@@ -19,6 +19,7 @@
     <section class="events-section">
         <div class="auto-container">
         	<div class="row clearfix">
+            @if(count($notices) >0)
                 @foreach($notices as $notice)
                         <!--Event Block-->
                             <div class="event-block-three col-lg-4 col-md-6 col-sm-12">
@@ -37,6 +38,7 @@
                                 </div>
                             </div>
                     @endforeach
+                @endif
             </div>
         </div>
     </section>

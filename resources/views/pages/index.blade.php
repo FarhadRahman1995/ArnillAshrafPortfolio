@@ -14,12 +14,10 @@
     <link href="{{asset('css/responsive.css')}}" rel="stylesheet">
     <!-- Color File -->
     <link href="{{asset('css/color.css')}}" rel="stylesheet">
-
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
-
 <body>
     <!-- Main Header -->
     <header class="main-header header-style-two">
@@ -170,7 +168,6 @@
         </div>
     </section>
 
-
     <!--Contact Section-->
     <section class="contact-section" id="contact">
         <div class="outer-container clearfix">
@@ -212,7 +209,6 @@
         </div>
     </section>
 
-
 	<!-- Main Footer -->
     <footer class="main-footer">
     	<div class="auto-container">
@@ -237,7 +233,6 @@
                             </div>
 						</div>
 					</div>
-
 					<!--Column-->
                     <div class="column col-lg-3 col-md-6 col-sm-12">
 						<div class="footer-widget links-widget">
@@ -254,17 +249,13 @@
 							</div>
 						</div>
 					</div>
-
 					<!--Column-->
                     <div class="column col-lg-3 col-md-6 col-sm-12">
 						<div class="footer-widget info-widget">
 							<div class="widget-content">
 								<h3>Contacts</h3>
 								<ul class="contact-info">
-                                	<li>Mirpur DOHS, Dhaka,Bangladesh</li>
-                                    {{--<li><a href="tel:(+880)  152 - 148 - 6072">(+880)  152 - 148 - 6072</a></li>
-                                    <li><a href="mailto:arnillashraf@gmail.com">arnillashraf@gmail.com</a></li>--}}
-                                </ul>
+                                	<li>Mirpur DOHS, Dhaka,Bangladesh</li></ul>
 							</div>
 						</div>
 					</div>

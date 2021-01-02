@@ -17,14 +17,6 @@ class ContactFormController extends Controller
         return view('contact.list', compact('contacts'));
     }
 
-    public function store()
-    {
-        $contact_form_data = request()->all();
-        Mail::to('farhadrahman1995@gmail.com')->send(new ContactFormMail($contact_form_data));
-
-        return redirect()->route('home','/#contact')->with('success','Your message has been submitted successfully');
-    }
-
     // Create Contact Form
     public function createForm(Request $request) {
         return view('contact.mail');
@@ -51,7 +43,6 @@ class ContactFormController extends Controller
         $contacts->message = $request->message;
 
         $contacts->save();
-        /*Contact::create($request->all());*/
 
         //  Send mail to admin
         Mail::send('contact.mail', array(
@@ -72,8 +63,7 @@ class ContactFormController extends Controller
     {
         $contact = Contact::find($id);
         $contact->delete($id);
-
-        return redirect()->route('admin.contact')->with('success','contact Deleted Successfully')->orderBy('created_at', 'desc');
+        return redirect()->route('admin.contact')->with('success','contact Deleted Successfully');
     }
 
 }

@@ -30,13 +30,5 @@
     </div>
 </div>
 
-{{--Name: {{ $name }} <br>
-Email: {{ $email }} <br>
-Phone: {{ $phone }} <br>
-Subject: {{ $subject }} <br>
-Message: {{ $user_query }} <br><br>--}}
-
-Thanks for writing.
-
 </body>
 </html>

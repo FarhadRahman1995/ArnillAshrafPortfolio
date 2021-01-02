@@ -33,7 +33,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!--Sidebar Side-->
                 <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
                     <aside class="sidebar">

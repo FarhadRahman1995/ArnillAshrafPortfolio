@@ -16,7 +16,6 @@
     </section>
     <!--End Banner Section -->
 
-
     <!--Sidebar Page Container-->
     <div class="sidebar-page-container">
         <div class="auto-container">
@@ -51,7 +50,6 @@
                             </div>
                                 @endforeach
                             @endif
-
                         </div>
                     </div>
 
@@ -60,7 +58,6 @@
                 <!--Sidebar Side-->
                 <div class="sidebar-side col-lg-4 col-md-12 col-sm-12 float-right">
                     <aside class="sidebar">
-
                         <!-- Post Widget -->
                         <div class="sidebar-widget popular-posts">
                             <h3 class="sidebar-title">Latest News</h3>
@@ -80,12 +77,10 @@
                 </div>
             </div>
         </div>
-
     </div>
-    <!-- End Sidebar Page Container -->
 
+    <!-- End Sidebar Page Container -->
     <span style="display: table; margin: 0 auto;">
         {{$blogs->links()}}
     </span>
-
 @endsection

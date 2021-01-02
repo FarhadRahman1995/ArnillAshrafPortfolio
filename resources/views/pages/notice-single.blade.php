@@ -13,20 +13,13 @@
     <link href="{{asset('css/responsive.css')}}" rel="stylesheet">
     <!-- Color File -->
     <link href="{{asset('css/color.css')}}" rel="stylesheet">
-
-{{--<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">--}}
-
 <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 </head>
-
 <body>
-
 <div class="page-wrapper">
-
     <!-- Main Header -->
     <header class="main-header">
         <!-- Header Top -->
@@ -124,7 +117,6 @@
     </header>
     <!-- End Main Header -->
 
-
     <!-- Page Banner Section -->
     <section class="page-banner">
         <div class="image-layer lazy-image"><img src="{{asset('assets/images/big_image.jpg')}}" alt="" style="height: 100%; width: 100%;"></div>
@@ -136,7 +128,6 @@
                 <li class="active">Notices Details</li>
             </ul>
         </div>
-
     </section>
     <!--End Banner Section -->
 
@@ -222,7 +213,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Footer Bottom -->
         <div class="footer-bottom">
             <div class="auto-container">
@@ -254,6 +244,5 @@
 <script src="{{asset('js/script.js')}}"></script>
 
 <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"></script>
-<script id="dsq-count-scr" src="//arnillashraf.disqus.com/count.js" async></script>
 </body>
 </html>
