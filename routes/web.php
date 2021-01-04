@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyExportImportController;
 
@@ -17,6 +18,10 @@ if(version_compare(PHP_VERSION, '7.2.0', '>=')) {
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/foo', function () {
+    Artisan::call('storage:link');
+});
 
 Route::get('/', 'PagesController@index')->name('home');
 Route::get('/notice', 'NoticePagesController@index')->name('notice');
@@ -70,8 +75,8 @@ Route::get('exports', [ MyExportImportController::class, 'importExportView' ]);
 Route::get('export', [ MyExportImportController::class, 'export' ])->name('export');
 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+//Route::get('/dashboard', function () {
+//    return view('dashboard');
+//})->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
