@@ -3,16 +3,8 @@
 
     <!-- Page Banner Section -->
     <section class="page-banner">
-        <div class="image-layer lazy-image"><img src="{{asset('assets/images/big_image.jpg')}}" alt="" style="height: 100%; width: 100%;"></div>
+        <div class="image-layer lazy-image"><img src="{{asset('assets/images/blog.jpg')}}" alt="" style="height: 100%; width: 100%;"></div>
         <div class="bottom-rotten-curve" style="background: url({{asset('assets/images/background/rotten-curve-5.png')}})"></div>
-
-        <div class="auto-container">
-            <h1>Social Media</h1>
-            <ul class="bread-crumb clearfix">
-                <li><a href="{{route('home')}}">Home</a></li>
-                <li class="active">Social Media</li>
-            </ul>
-        </div>
     </section>
     <!--End Banner Section -->
 

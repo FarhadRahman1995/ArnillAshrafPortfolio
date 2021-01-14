@@ -19,9 +19,6 @@ if(version_compare(PHP_VERSION, '7.2.0', '>=')) {
 |
 */
 
-Route::get('/foo', function () {
-    Artisan::call('storage:link');
-});
 
 Route::get('/', 'PagesController@index')->name('home');
 Route::get('/notice', 'NoticePagesController@index')->name('notice');
@@ -32,7 +29,8 @@ Route::get('/socialmedia', 'SocialMediaPagesController@index')->name('socialmedi
 Route::get('/blog', 'BlogPagesController@index')->name('blog');
 Route::get('/blog-single/{id}', 'BlogPagesController@show')->name('blog-single');
 
-Route::prefix('admin')->group(function(){
+Route::group(['prefix' => 'etkhnq72hglm', 'middleware' => 'auth'],function()
+{
 Route::get('/', 'PagesController@dashboard')->name('admin.dashboard');
 Route::get('/contacts', 'ContactFormController@index')->name('admin.contact');
 Route::delete('/contacts/destroy/{id}', 'ContactFormController@destroy')->name('admin.contact.destroy');
@@ -64,6 +62,9 @@ Route::get('/blogs/list', 'BlogPagesController@list')->name('admin.blogs.list');
 Route::get('/blogs/edit/{id}', 'BlogPagesController@edit')->name('admin.blogs.edit');
 Route::post('/blogs/update/{id}', 'BlogPagesController@update')->name('admin.blogs.update');
 Route::delete('/blogs/destroy/{id}', 'BlogPagesController@destroy')->name('admin.blogs.destroy');
+
+Route::get('/homeposts', 'HomePostsPagesController@index')->name('admin.homeposts');
+Route::put('/homeposts', 'HomePostsPagesController@update')->name('admin.homeposts.update');
 
 });
 

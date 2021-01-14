@@ -2311,7 +2311,7 @@ img{
 
 .about-feature-two .inner-box{
 	position:relative;
-	display:block;
+	display:none;
 	padding:50px 40px;
 	background:#25283a;
 	border-radius:20px;
@@ -2404,6 +2404,7 @@ img{
 .about-feature-two .text{
 	position:relative;
 	font-size:16px;
+	background-color: yellow;
 	color:#ffffff;
 	margin:0 0 25px;
 }

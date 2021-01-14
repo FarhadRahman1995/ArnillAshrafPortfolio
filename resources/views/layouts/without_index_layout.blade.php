@@ -173,7 +173,7 @@
                             <div class="widget-content">
                                 <h3>Contacts</h3>
                                 <ul class="contact-info">
-                                    <li>Mirpur DOHS, Dhaka,Bangladesh</li>
+                                    <li><a href="{{route('home', '/#contact')}}" data-target="">Leave A Message</a></li>
                                 </ul>
                             </div>
                         </div>

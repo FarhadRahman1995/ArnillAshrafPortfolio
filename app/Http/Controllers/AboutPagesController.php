@@ -85,7 +85,7 @@ class AboutPagesController extends Controller
         if($request->file('about_img')){
             $img_file = $request->file('about_img');
             $img_file->storeAs('public/img/','about_img.' . $img_file->getClientOriginalExtension());
-            $about->about_img = 'storage/img/about_img.' . $img_file->getClientOriginalExtension();
+            $about->about_img = 'public/storage/img/about_img.' . $img_file->getClientOriginalExtension();
         }
 
         $about->save();

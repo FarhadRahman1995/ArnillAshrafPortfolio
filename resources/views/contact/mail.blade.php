@@ -12,8 +12,7 @@
     <div class="auto-container">
         <div class="row clearfix">
             <!--Left Column-->
-            <div class="left-column col-lg-6 col-md-12 col-sm-12" style="background-color: greenyellow; color: black; text-align: center;overflow: hidden;position: absolute;">
-                <img src="{{asset('assets/images/big_image.jpg')}}" alt="">
+            <div class="left-column col-lg-6 col-md-12 col-sm-12" style="background-color: rgb(230, 42, 78); color: white; text-align: center;overflow: hidden;position: absolute;">
                 <div class="inner">
                     <div class="sec-title">
                         <h2>You have got an email from : {{ $name }} </h2><br>

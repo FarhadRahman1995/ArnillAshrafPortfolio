@@ -60,11 +60,11 @@ class NoticePagesController extends Controller
 
         $big_file = $request->file('big_image');
         Storage::putFile('public/img/', $big_file);
-        $notices->big_image = "storage/img/".$big_file->hashName();
+        $notices->big_image = "public/storage/img/".$big_file->hashName();
 
         $small_file = $request->file('small_image');
         Storage::putFile('public/img/', $small_file);
-        $notices->small_image = "storage/img/".$small_file->hashName();
+        $notices->small_image = "public/storage/img/".$small_file->hashName();
 
         $notices->save();
 
@@ -121,13 +121,13 @@ class NoticePagesController extends Controller
         if($request->file('big_image')){
             $big_file = $request->file('big_image');
             Storage::putFile('public/img/', $big_file);
-            $notices->big_image = "storage/img/".$big_file->hashName();
+            $notices->big_image = "public/storage/img/".$big_file->hashName();
         }
 
         if($request->file('small_image')){
             $small_file = $request->file('small_image');
             Storage::putFile('public/img/', $small_file);
-            $notices->small_image = "storage/img/".$small_file->hashName();
+            $notices->small_image = "public/storage/img/".$small_file->hashName();
         }
 
         $notices->save();

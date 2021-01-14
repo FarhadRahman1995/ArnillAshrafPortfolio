@@ -64,11 +64,11 @@ class BlogPagesController extends Controller
 
         $big_file = $request->file('big_image');
         Storage::putFile('public/img/', $big_file);
-        $blogs->big_image = "storage/img/".$big_file->hashName();
+        $blogs->big_image = "public/storage/img/".$big_file->hashName();
 
         $small_file = $request->file('small_image');
         Storage::putFile('public/img/', $small_file);
-        $blogs->small_image = "storage/img/".$small_file->hashName();
+        $blogs->small_image = "public/storage/img/".$small_file->hashName();
 
         $blogs->save();
 
@@ -126,13 +126,13 @@ class BlogPagesController extends Controller
         if($request->file('big_image')){
             $big_file = $request->file('big_image');
             Storage::putFile('public/img/', $big_file);
-            $blogs->big_image = "storage/img/".$big_file->hashName();
+            $blogs->big_image = "public/storage/img/".$big_file->hashName();
         }
 
         if($request->file('small_image')){
             $small_file = $request->file('small_image');
             Storage::putFile('public/img/', $small_file);
-            $blogs->small_image = "storage/img/".$small_file->hashName();
+            $blogs->small_image = "public/storage/img/".$small_file->hashName();
         }
 
         $blogs->save();

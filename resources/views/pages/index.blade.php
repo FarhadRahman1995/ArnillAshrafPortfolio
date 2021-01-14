@@ -122,23 +122,25 @@
                     <!--About Feature-->
                     <div class="about-feature-two col-lg-4 col-md-6 col-sm-12">
                         <div class="inner-box wow fadeInLeft" data-wow-delay="0ms">
-							<div class="image-layer lazy-image"><img src="{{asset('assets/images/big_image.jpg')}}" alt=""> </div>
-                            <div class="text" style="padding-top: 200px;">I have a website because it's an interesting tool, very - and quite.</div>
+							<div class="image-layer lazy-image"><img src="{{url($homeposts->bc_img1)}}" alt=""> </div>
+                            <br><br><br><br><br><br><br><br>
+                            <h5 style="text-align:center; background-color:rgb(230, 42, 78); border-radius: 5px; color: white;padding: 5px;">{{$homeposts->title1}}</h5>
                         </div>
                     </div>
                     <!--About Feature-->
                     <div class="about-feature-two col-lg-4 col-md-6 col-sm-12">
                         <div class="inner-box wow fadeInLeft" data-wow-delay="300ms">
-							<div class="image-layer lazy-image"><img src="{{asset('assets/images/big_image.jpg')}}" alt=""></div>
-                            <div class="text" style="padding-top: 200px;">My Site is my about book.If you want to read then click on read more.</div>
-
+							<div class="image-layer lazy-image"><img src="{{url($homeposts->bc_img2)}}" alt=""> </div>
+                            <br><br><br><br><br><br><br><br>
+                            <h5 style="text-align:center; background-color:rgb(230, 42, 78); border-radius: 5px; color: white;padding: 5px;">{{$homeposts->title2}}</h5>
                         </div>
                     </div>
                     <!--About Feature-->
                     <div class="about-feature-two col-lg-4 col-md-6 col-sm-12">
                         <div class="inner-box wow fadeInLeft" data-wow-delay="600ms">
-                            <div class="image-layer lazy-image"><img src="{{asset('assets/images/big_image.jpg')}}" alt=""></div>
-                            <div class="text" style="padding-top: 200px;">If you want to contact with me then send me a message with your details.</div>
+                            <div class="image-layer lazy-image"><img src="{{url($homeposts->bc_img3)}}" alt=""> </div>
+                            <br><br><br><br><br><br><br><br>
+                            <h5 style="text-align:center; background-color:rgb(230, 42, 78); border-radius: 5px; color: white;padding: 5px;">{{$homeposts->title3}}</h5>
                         </div>
                     </div>
                 </div>
@@ -255,7 +257,7 @@
 							<div class="widget-content">
 								<h3>Contacts</h3>
 								<ul class="contact-info">
-                                	<li>Mirpur DOHS, Dhaka,Bangladesh</li></ul>
+                                	<li><a href="{{route('home', '/#contact')}}" data-target="">Leave A Message</a></li>
 							</div>
 						</div>
 					</div>

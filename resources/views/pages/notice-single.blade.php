@@ -119,15 +119,8 @@
 
     <!-- Page Banner Section -->
     <section class="page-banner">
-        <div class="image-layer lazy-image"><img src="{{asset('assets/images/big_image.jpg')}}" alt="" style="height: 100%; width: 100%;"></div>
+        <div class="image-layer lazy-image"><img src="{{asset('assets/images/blog.jpg')}}" alt="" style="height: 100%; width: 100%;"></div>
         <div class="bottom-rotten-curve" style="background: url({{asset('assets/images/background/rotten-curve-5.png')}})"></div>
-        <div class="auto-container">
-            <h1>Notices Details</h1>
-            <ul class="bread-crumb clearfix">
-                <li><a href="{{route('home')}}">Home</a></li>
-                <li class="active">Notices Details</li>
-            </ul>
-        </div>
     </section>
     <!--End Banner Section -->
 
@@ -205,7 +198,7 @@
                             <div class="widget-content">
                                 <h3>Contacts</h3>
                                 <ul class="contact-info">
-                                    <li>Mirpur DOHS, Dhaka,Bangladesh</li>
+                                    <li><a href="{{route('home', '/#contact')}}" data-target="">Leave A Message</a></li>
                                 </ul>
                             </div>
                         </div>

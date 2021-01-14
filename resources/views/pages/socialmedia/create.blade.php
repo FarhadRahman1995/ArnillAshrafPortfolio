@@ -2,10 +2,10 @@
 @section('content')
     <main>
         <div class="container-fluid">
-            <h1 class="mt-4">Create Notice List</h1>
+            <h1 class="mt-4">Create Social Media List</h1>
             <ol class="breadcrumb mb-4">
                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Dashboard</a></li>
-                <li class="breadcrumb-item active">Create Notice List</li>
+                <li class="breadcrumb-item active">Create Social Media List</li>
             </ol>
             <form action="{{route('admin.socialmedia.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf

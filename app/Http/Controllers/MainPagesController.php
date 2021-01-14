@@ -83,12 +83,12 @@ class MainPagesController extends Controller
         if($request->file('bc_img')){
             $img_file = $request->file('bc_img');
             $img_file->storeAs('public/img/','bc_img.' . $img_file->getClientOriginalExtension());
-            $main->bc_img = 'storage/img/bc_img.' . $img_file->getClientOriginalExtension();
+            $main->bc_img = 'public/storage/img/bc_img.' . $img_file->getClientOriginalExtension();
         }
         if($request->file('logo_img')){
             $img_file = $request->file('logo_img');
             $img_file->storeAs('public/img/','logo_img.' . $img_file->getClientOriginalExtension());
-            $main->logo_img = 'storage/img/logo_img.' . $img_file->getClientOriginalExtension();
+            $main->logo_img = 'public/storage/img/logo_img.' . $img_file->getClientOriginalExtension();
         }
 
 

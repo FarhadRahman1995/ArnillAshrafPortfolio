@@ -3,15 +3,8 @@
 
     <!-- Page Banner Section -->
     <section class="page-banner">
-        <div class="image-layer lazy-image"><img src="{{asset('assets/images/big_image.jpg')}}" alt="" style="height: 100%; width: 100%;"></div>
+        <div class="image-layer lazy-image"><img src="{{asset('assets/images/blog.jpg')}}" alt="" style="height: 100%; width: 100%;"></div>
         <div class="bottom-rotten-curve" style="background: url({{asset('assets/images/background/rotten-curve-5.png')}})"></div>
-        <div class="auto-container">
-            <h1>Blog Details</h1>
-            <ul class="bread-crumb clearfix">
-                <li><a href="{{route('home')}}">Home</a></li>
-                <li class="active">Blog Details</li>
-            </ul>
-        </div>
     </section>
     <!--End Banner Section -->
 
@@ -50,27 +43,16 @@
                     </aside>
                 </div>
                 <!-- Comments Area -->
-                <div class="comments-area">
-                    <div class="group-title"><h3>Comments</h3></div>
-                    <div class="comment-box">
-                        <div id="disqus_thread"></div>
-                        <script>
-                            /**
-                             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                            (function() { // DON'T EDIT BELOW THIS LINE
-                                var d = document, s = d.createElement('script');
-                                s.src = 'https://arnillashraf.disqus.com/embed.js';
-                                s.setAttribute('data-timestamp', +new Date());
-                                (d.head || d.body).appendChild(s);
-                            })();
-                        </script>
+                <div class="comments-area auto-container">
+                    <div class="row">
+                    <div class="group-title addthis_inline_share_toolbox col-2"><h3>Share: </h3></div>
+                
+                    <div class="background col-2" style="margin-top:28px;">
+                        <div style="text-align: center;">
+                            <button type="button" class="clipboard btn btn-light">Copy Link</button>
+                            <p></p>
+                        </div>
                     </div>
-                </div>
-                <div class="background">
-                    <div style="text-align: center;">
-                        <button class="clipboard">Copy Url</button>
-                        <p>Have you already clicked?</p>
                     </div>
                 </div>
         </div>

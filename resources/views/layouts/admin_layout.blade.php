@@ -23,7 +23,27 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="userDropdown" href="{{route('login')}}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="{{route('login')}}">Logout</a>
+                <div class="pt-4 pb-1 border-t border-gray-200">
+            <div class="flex items-center px-4">
+                <div class="">
+                    <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
+                    <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
+                </div>
+            </div>
+
+            <div class="mt-3 space-y-1">
+                <!-- Authentication -->
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+
+                    <x-responsive-nav-link :href="route('logout')"
+                            onclick="event.preventDefault();
+                                        this.closest('form').submit();">
+                        {{ __('Logout') }}
+                    </x-responsive-nav-link>
+                </form>
+            </div>
+        </div>
             </div>
         </li>
     </ul>
@@ -82,6 +102,10 @@
                             <a class="nav-link" href="{{route('admin.notices.list')}}">List</a>
                         </nav>
                     </div>
+                    <a class="nav-link" href="{{route('admin.homeposts')}}">
+                        <div class="sb-nav-link-icon"><i class="fas fa-comment"></i></div>
+                        Featured Posts
+                    </a>
                     <a class="nav-link" href="{{route('admin.contact')}}">
                         <div class="sb-nav-link-icon"><i class="fas fa-envelope"></i></div>
                         Contacts
